@@ -1,4 +1,4 @@
-package com.spring.storage;
+package com.spring.model;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 @Component
-public class Disco {
+public class GravacaoDisco {
 	
 	@Value("${contato.disco.raiz}")
 	private String raiz;

@@ -162,8 +162,8 @@ function createDownloadLink(blob) {
 		var fd=new FormData();
 		fd.append('fileName', filename)
 		console.log(filename);
-		fd.append("foto",blob, filename);
-		xhr.open("POST","http://localhost:8080/gravador/fotos/",true);
+		fd.append("gravacao",blob, filename);
+		xhr.open("POST","http://localhost:8080/gravador/gravacao/",true);
 		xhr.send(fd);
 	})
 	li.appendChild(document.createTextNode (" "))//add a space in between
